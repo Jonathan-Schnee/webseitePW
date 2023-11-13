@@ -1,0 +1,24 @@
+
+#nav.container{
+    margin-left: 0%;
+}
+#navbarImage{
+    width:6em;
+    height:auto
+}
+
+#navbarNavDropdown{
+    color: #1E4F9E;
+    border: 0.15em solid;
+    border-color: #1E4F9E;
+    border-radius: 2em;
+    transition: height 1s ease-out;
+}
+@media(min-width: 991.98px){
+    .navbar{
+        flex-wrap: nowrap;
+    }
+    #navbarNavDropdown{
+        flex: revert;
+    }
+}

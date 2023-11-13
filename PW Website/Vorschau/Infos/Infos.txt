@@ -1,0 +1,76 @@
+Blaue Farbe:
+
+RGB 30 79 158
+CMYK 100 74 0 0
+HEX #1E4F9E
+RAL 5017
+Folie Verkehrsblau
+
+-------------------------------------
+
+In footer bitte noch die Social media links als Logos ergänzen in mitte zwischen copyright und Impressum.
+
+Google:
+https://www.google.com/search?sca_esv=575584273&rlz=1C1ONGR_deDE1070DE1070&sxsrf=AM9HkKmYL_aHmjkVjUzcFivuYF35G8p9jg%3A1697971279054&q=Pixels%20Wrappings&stick=H4sIAAAAAAAAAONgU1I1qDAxtzQwMzcysExLNk4yMze1MqgwNDIxSTZITTFLTTZLNDUyXMQqEJBZkZpTrBBelFhQkJmXXgwAKd6FTjwAAAA&mat=CVl3DpR6SmHU&ved=2ahUKEwj4yLT3u4mCAxXGQvEDHWhVAY0QrMcEegQIDhAH
+
+Instagram:
+https://www.instagram.com/pixels_wrappings/
+
+Facebook:
+https://www.facebook.com/people/Pixels-Wrappings/100095186474702/
+
+YouTube:
+https://www.youtube.com/@PixelsWrappings
+
+TikTok:
+https://www.tiktok.com/@pixels_wraps
+
+-------------------------------------
+
+Auch die Logos der Partner mit verlinkung
+
+Maler:
+https://www.xn--krhenbhl-1za8v.de/
+
+Renate-Schmuck:
+https://renate-schmuck.com/
+
+Stadbach Schränzer:
+https://www.facebook.com/stadtbach
+
+-------------------------------------
+
+Bei hover über navibar links, farbe etwas erhellen.
+
+Wenn hover über Leistungen und Infos, navibar fährt aus, pfeilsymbol bitte ändern zu -
+
+Bei hover über ausgeklappte links, auch dort aufhellen.
+
+Schriftart auf kommpletter Website bitte (wenn möglich) Calibri oder ähnliche.
+
+-------------------------------------
+
+Im Tab bereich, Seiten bitte benennen wie folgt: Pixels Wrappings - name der seite
+
+-------------------------------------
+
+Im Formular, wenn möglich einstellen, dass die mit den stern markierten felder ausgefüllt sein müssen, ansonsten geht senden nicht. (auch das bestätigungs feldchen)
+
+Bitte wenn möglich einstellen, dass entweder bei Telefon oder bei E-Mail etwas eingetragen sein muss. Ansonsten auch kein Senden.
+
+Art der Anfrage, Drop Down, wenn - auswählen  - an ist, kein senden möglich. Möglichkeiten zum Auswählen:
+Folienschnitte
+Textilveredelung
+Fahrzeugbeschriftung
+Fenster-/Gebäudebeschriftung
+Geschenkideen
+Sonstiges oder mehrere Optionen
+
+Empfänger E-Mail für Formular:
+info@pixels-wrappings.de
+
+-------------------------------------
+
+Sollte auf einer Seite platztechnisch gescrollt werden müssen, soll Logo und Navibar statisch bleiben.
+
+Vielen lieben Dank dir und viel spaß bei der Arbeit :D

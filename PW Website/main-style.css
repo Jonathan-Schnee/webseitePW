@@ -1,0 +1,42 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.bg{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    background-color: rgba(137, 43, 226, 0.274);
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.link {
+    color: #1F509E;
+    text-decoration: none;
+}
+
+.nav {
+    border-radius: 30px;
+    background-color: rgba(0, 255, 255, 0.212);
+    padding: 15px;
+    margin-left: 61.5%;
+    margin-right: 1.5%;
+    display: flex;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 100px;
+}
