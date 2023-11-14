@@ -16,17 +16,16 @@ position: absolute;
     margin-left: auto;
     color: #1E4F9E;
 }
-.dropdown-menu.show{
+.dropdown-menu {
+    display: none;
     visibility: hidden;
     border:none; 
-    padding-top: 0em;
-}
-.dropdown-menu {
-    display: block;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
     overflow: hidden;
   }
+.dropdown-menu.show {
+    display: block;
+    visibility: visible;
+}
   
 @media(min-width: 991.98px){
     .navbar-brand{
@@ -49,9 +48,27 @@ position: absolute;
     #navbarNavDropdown{  
         flex: revert;
     }
-    .dropdown-menu.show{
-        display: flex !important; 
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
+    .dropdown-menu{
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        padding-top: 0em;
+        width:100%;
+    }
+    .dropdown:hover .dropdown-menu{
+        visibility: visible;
+        background-color: transparent;
+        border:none; 
+        display: block;
+    }
+    .dropdown-item{
+        width: auto;
+        display: inline-flex;
+    }
+    .dropdownspan-1{
+        display: block;
+    }
+    .dropdownspan-2{
+        display: block;
     }
 }
