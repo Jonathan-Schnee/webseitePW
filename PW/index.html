@@ -11,9 +11,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="src\assets\css\overlay.css" type="text/css" rel="stylesheet" >
 
+
 </head>
 
-<body>
+<body onload="init()" onresize="init()">
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" id="nav">
@@ -28,15 +29,19 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Start</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown" onmouseover="openDropdown('dropdown-menu-1')" onmouseout="closeDropdown('dropdown-menu-1')">
+                <a class="nav-link dropdown-toggle" id="nav-link-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Leistungen
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown-menu">
+                    <span class="dropdownspan-1" id="dropdown-menu-1">
+                      <a class="dropdown-item" href="#">Textilien</a>
+                      <a class="dropdown-item" href="#">Fensterbeschriftung</a>
+                      <a class="dropdown-item" href="#">Geschenkideen</a>
+                      <a class="dropdown-item" href="#">Folierung</a>
+                      <a class="dropdown-item" href="#">Fahrzeugbeschriftung</a>
+                    </span>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Anfragen</a>
@@ -44,15 +49,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Shop</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown"  onmouseover="openDropdown('dropdown-menu-2')" onmouseout="closeDropdown('dropdown-menu-2')">
+                <a class="nav-link dropdown-toggle" id="nav-link-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown link
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown-menu">
+                  <span class="dropdownspan-2" id="dropdown-menu-2">
+                    <a class="dropdown-item" href="#">Tipps für Beklebungen</a>
+                    <a class="dropdown-item" href="#">Über Uns</a>
+                    <a class="dropdown-item" href="#">Anfahrt</a>
+                  </span>
+                </div>
               </li>
             </ul>
           </div>      
@@ -60,7 +67,7 @@
       </nav>
   </header>
   <main>
-    
+    blablalba
   </main>
   <footer>
     <!-- place footer here -->
@@ -69,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
-
+  <script src="src\assets\js\overlay.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>

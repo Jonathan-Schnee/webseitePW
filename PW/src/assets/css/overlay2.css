@@ -54,6 +54,10 @@ position: absolute;
         background-color: transparent;
         padding-top: 0em;
         width:100%;
+        
+    }
+    .nav-link{
+        pointer-events: none;
     }
     .dropdown:hover .dropdown-menu{
         visibility: visible;
