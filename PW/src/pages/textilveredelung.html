@@ -67,8 +67,14 @@
       </nav>
   </header>
   <main>
-    <div class="position-absolute top-50 start-50 translate-middle" id="TshirtColor">
-            <img src="..\assets\images\T-Shirt.png" id="TshirtImage">
+    <div class="position-absolute top-50 start-50 translate-middle" id="TshirtView">
+            <img src="..\assets\images\T-Shirt.png" class="TshirtImage">
+            <button type="button" class="btn btn-primary btn-square-md shadow-none" style="--bs-btn-bg: #FFFFF;" onclick="changeTo('#FFFFFF')"></button>
+            <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #1E4F9E;" onclick="changeTo('#1E4F9E')"></button>
+            <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #ee3d0c;" onclick="changeTo('#ee3d0c')"></button>
+            <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #00d0ff;" onclick="changeTo('#00d0ff')"></button>
+            <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #531e9e;" onclick="changeTo('#531e9e')"></button>
+            <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #07e94e;" onclick="changeTo('#07e94e')"></button>
     </div>
   </main>
   <footer>
@@ -85,6 +91,7 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
   <script src="..\assets\js\overlay.js"></script>
+  <script src="..\assets\js\changeColor.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
