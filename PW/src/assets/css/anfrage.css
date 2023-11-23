@@ -1,0 +1,22 @@
+#inquiryForm{
+    width:50%;
+}
+.form-group{
+    padding-bottom: 10px;
+}
+.form-control{
+    border: 0.15em solid;
+    border-collapse: collapse;
+    border-color: #1E4F9E;
+    border-radius: 2em;
+}
+.form-select{
+    border: 0.15em solid;
+    border-collapse: collapse;
+    border-color: #1E4F9E;
+    border-radius: 2em;    
+}
+.container{
+    position: relative;
+    height: 100%;
+}
