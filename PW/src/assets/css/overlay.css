@@ -3,6 +3,7 @@ body{
     overflow: auto;
 }
 main{
+    height: -webkit-fill-available;
     padding-bottom: 30px;
 }
 @media(max-width: 991.98px){
@@ -10,7 +11,9 @@ main{
         padding-bottom: 0em;
     }
 }
-
+.current {
+    background: red;
+  }
 
 @media(min-width: 991.98px){
     header{
@@ -24,8 +27,10 @@ main{
     }
     
     #navbarImage{
-        width:6em;
-        height:auto
+        width:8em;
+        height:auto;
+        margin-left: 4.5em;
+        margin-top: 1em;
     }
     
     .navbar-toggler{
@@ -40,19 +45,35 @@ main{
     #nav{
         align-items: normal;
     }
+    .nav-item{
+        margin-left:1.25em;
+        margin-right:1.25em;
+      }
+    .nav-item:first-child{
+        margin-left: 1.5em;
+    }
+    .nav-item:last-child{
+        margin-right: 1.5em;
+    }
 
     #navbarNavDropdown{
+        margin-top: 1.5em;
+        font-size: larger;
+        font-weight: bolder;
+        margin-right: 1em;
         margin-left: auto;
         color: #1E4F9E;
         border: 0.15em solid;
         border-collapse: collapse;
         border-color: #1E4F9E;
         border-radius: 2em;
+
     }
     #navbarNavDropdown{  
         flex: revert;
     }
     .dropdown-menu{
+        
         display: block;
         position: absolute;
         background-color: transparent;
@@ -77,6 +98,7 @@ main{
         display: block;
     }
     .dropdownspan-2{
+        margin-right: 2em;
         display: block;
         float: right;
     }

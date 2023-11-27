@@ -1,0 +1,14 @@
+hr{
+    --bs-border-color: black;
+    opacity:100%
+}
+.container{
+    height: inherit;
+    padding-bottom: 20px;
+}
+#openingHours{
+    
+}
+#map{
+    height:auto
+}

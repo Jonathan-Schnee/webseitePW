@@ -1,12 +1,15 @@
 
 var  navbar;
 var  colnavbar;
-var navLinks = ['nav-link-1','nav-link-2']
+var navLinks;
 var subnavs = ['dropdown-menu-1', 'dropdown-menu-2'];
 var subnav
 var dropdown;
 var menuTransition = 'all 0.5s'
 var bool = false;
+var items = document.getElementsByClassName('nav-link');
+var filename = window.location.pathname;
+
 function init(){
     if(window.innerWidth >= 991.98){
         navbar = document.getElementsByClassName('navbar-nav');
@@ -24,9 +27,10 @@ function init(){
             dropdown.style.transition = menuTransition;
         });        
         colnavbar.style.transition = menuTransition;
-        navLinks.forEach(function(navLink){
-            document.getElementById(navLink).style.pointerEvents = 'auto';
-        })       
+        navLinks = document.getElementsByClassName("nav-link")
+        for (let navLink of navLinks) {
+            navLink.style.pointerEvents = 'auto';
+        }      
     }
     else{
         subnavs.forEach(function (subnav){
@@ -38,6 +42,15 @@ function init(){
         });   
 
     }
+    
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].classList.contains("current")) {
+          items[i].classList.toggle("current")
+        }
+        if(items[i].href == filename){
+            items[i].classList.add("current");
+        }
+      }
 }
 function openDropdown(arg){
     if(window.innerWidth >= 991.98){
@@ -56,4 +69,3 @@ function closeDropdown(arg){
         colnavbar.style.paddingBottom = '0px';
     }
 }
-
