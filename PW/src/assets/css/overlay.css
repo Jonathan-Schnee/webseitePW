@@ -3,18 +3,19 @@ body{
     overflow: auto;
 }
 main{
-    height: -webkit-fill-available;
-    padding-bottom: 30px;
+    min-height: calc(100vh - 34px);
+    display: flex;
+}
+.dropdown-item.active, .dropdown-item:active{
+    color: var(--bs-navbar-active-color);
+    font-weight: bold;
+    background-color: inherit;
 }
 @media(max-width: 991.98px){
     .nav-link{
         padding-bottom: 0em;
     }
 }
-.current {
-    background: red;
-  }
-
 @media(min-width: 991.98px){
     header{
         z-index: 100;
@@ -27,10 +28,16 @@ main{
     }
     
     #navbarImage{
-        width:8em;
+        width:11.5em;
         height:auto;
-        margin-left: 4.5em;
-        margin-top: 1em;
+        margin-left: 3em;
+        margin-top: 0.25em;
+        padding: 1em 1.5em 1em;
+        background-color: white;
+        border: 0.01em solid;
+        border-collapse: collapse;
+        border-color: transparent;
+        border-radius: 2em;
     }
     
     .navbar-toggler{
@@ -55,13 +62,16 @@ main{
     .nav-item:last-child{
         margin-right: 1.5em;
     }
-
+    .navbar-nav{
+        background-color: white;
+    }
     #navbarNavDropdown{
         margin-top: 1.5em;
         font-size: larger;
         font-weight: bolder;
         margin-right: 1em;
         margin-left: auto;
+        overflow: hidden;
         color: #1E4F9E;
         border: 0.15em solid;
         border-collapse: collapse;
@@ -73,10 +83,9 @@ main{
         flex: revert;
     }
     .dropdown-menu{
-        
         display: block;
         position: absolute;
-        background-color: transparent;
+        background-color: white;
         width:100%;
         visibility: hidden;
         border:none; 
@@ -95,15 +104,18 @@ main{
         display: inline-flex;
     }
     .dropdownspan-1{
+        margin-left:1.5em;
+        margin-right: 2em;
         display: block;
     }
     .dropdownspan-2{
+        margin-left:1.5em;
         margin-right: 2em;
         display: block;
         float: right;
     }
     body > main{
-        padding-top: 80px;
+        padding-top: 10em;
     }
     #ourPartners{
         margin-bottom: 50px;
@@ -112,9 +124,21 @@ main{
     .footer{
         background-color: #1E4F9E;
         color: white;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
     }
     .footer a{
         color: inherit;
         text-decoration: inherit;
+    }
+    #logos a{
+        margin-left: 2em;
+        
+    }
+    #logos a img{
+        fill:white;
+    }
+    #logos a:first-child{
+        margin-left: 0;
     }
 }

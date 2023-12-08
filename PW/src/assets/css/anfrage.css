@@ -20,3 +20,16 @@
     position: relative;
     height: 100%;
 }
+.btn, .btn-primary{
+    border: 0.15em solid;
+    border-collapse: collapse;
+    border-color: #1E4F9E;
+    background-color:white;
+    border-radius: 2em;
+    color: black
+}
+.btn-primary:hover{
+    background-color: lightgray !important;
+    color:black !important;
+
+}

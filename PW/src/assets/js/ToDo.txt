@@ -1,25 +1,5 @@
-navbar
- - vor start und hinter info padding
+Formular senden
+	Empfänger E-Mail für Formular: info@pixels-wrappings.de
+Anfrage dropdown wenn möglich ändern X
+Extra Seiten erstellen
 
-start in navbar trotzdem ausgewählt
-
-navbar und logo weiter richtung mitte
-
-navbar background white
-
-Logo white anstatt transparent
-
-Navbar dropdown bündig mit navbar
-
-Footbar logos
-
-Anfragen dropdown schauen ob es gleich wie navbar ist 
-
-textilveredelung butten mb
-
-logo und navbar sollen mitscrollen
-
-footer soll verschwinden
-
-
-Bitte wenn möglich einstellen, dass entweder bei Telefon oder bei E-Mail etwas eingetragen sein muss. Ansonsten auch kein Senden.

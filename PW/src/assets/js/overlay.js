@@ -8,7 +8,7 @@ var dropdown;
 var menuTransition = 'all 0.5s'
 var bool = false;
 var items = document.getElementsByClassName('nav-link');
-var filename = window.location.pathname;
+
 
 function init(){
     if(window.innerWidth >= 991.98){
@@ -42,15 +42,6 @@ function init(){
         });   
 
     }
-    
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].classList.contains("current")) {
-          items[i].classList.toggle("current")
-        }
-        if(items[i].href == filename){
-            items[i].classList.add("current");
-        }
-      }
 }
 function openDropdown(arg){
     if(window.innerWidth >= 991.98){

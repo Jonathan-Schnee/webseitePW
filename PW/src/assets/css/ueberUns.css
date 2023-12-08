@@ -1,0 +1,14 @@
+.container{
+    font-weight: bold;
+}
+.colored{
+    color:#1E4F9E ;
+}
+.avatar{
+    margin:0 !important;
+    height:auto;
+    border: 0.2em solid;
+    border-collapse: collapse;
+    border-color: #1E4F9E !important;
+    border-radius: 2em;
+}
