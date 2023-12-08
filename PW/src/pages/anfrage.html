@@ -73,7 +73,7 @@
         <div class="position-relative w-100 h-100">
             <div>
                 <p class="h3 fw-bolder text-center">Willkommen im Anfragenbereich von Pixels Wrappings</p>
-                <form class="position-relative top-0 start-50 translate-middle-x needs-validation fw-bolder" id="inquiryForm" novalidate action="https://formsubmit.co/jonathan.schnee@web.de" method="POST">
+                <form class="position-relative top-0 start-50 translate-middle-x needs-validation fw-bolder" id="inquiryForm" novalidate action="https://formsubmit.co/jonathan.schnee@web.de" method="POST" enctype="multipart/form-data">
                     <div class="form-group row">
                       <label for="reguestType" class="col-4 col-form-label">Art der Anfrage*</label> 
                       <div class="col-8">
@@ -169,8 +169,20 @@
             </div>         
         </div>
     </div>
-
-
+    <!-- Script damit man nur telefon oder email angeben muss -->
+    <script>
+          const inputs = Array.from(
+      document.querySelectorAll('input[name=telephone], input[name=email]')
+    );
+    
+    const inputListener = e => {
+      inputs
+        .filter(i => i !== e.target)
+        .forEach(i => (i.required = !e.target.value.length));
+    };
+  
+    inputs.forEach(i => i.addEventListener('input', inputListener));
+    </script>
 
   </main>
   <footer>
