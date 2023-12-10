@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Pixel Wrappings - Über Uns</title>
+  <title>Pixel Wrappings - Über uns</title>
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -16,7 +16,7 @@
 </head>
 
 <body onload="init()" onresize="init()">
-  <header>
+  <header class=" position-fixed">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" id="nav">
           <a class="navbar-brand" href="#">
@@ -50,14 +50,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="../shop.html">Shop</a>
               </li>
-              <li class="nav-item dropdown"  onmouseover="openDropdown('dropdown-menu-2')" onmouseout="closeDropdown('dropdown-menu-2')">
+              <li class="nav-item active dropdown"  onmouseover="openDropdown('dropdown-menu-2')" onmouseout="closeDropdown('dropdown-menu-2')">
                 <a class="nav-link dropdown-toggle" id="nav-link-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Infos
                 </a>
                 <div class="dropdown-menu">
                   <span class="dropdownspan-2" id="dropdown-menu-2">
                     <a class="dropdown-item" href="tippsBeklebungen.html">Tipps für Beklebungen</a>
-                    <a class="dropdown-item" href="">Über Uns</a>
+                    <a class="dropdown-item ddActive" href="">Über uns</a>
                     <a class="dropdown-item" href="anfahrt.html">Anfahrt</a>
                   </span>
                 </div>
@@ -73,11 +73,11 @@
             <div class="h-100  d-flex flex-column">
                 <div class="row mb-3">
                     <div class="col-1"></div>
-                    <div class="fs-3 col">Über Uns</div>
+                    <div class="fs-3 col">Über uns</div>
                     <br>
                 </div>
                 <div class="">Wir sind Ihr Partner, wenn es um Folierung jeglicher Art geht.</div>
-                <div class="">Unser Anspruch an uns selbst ist es, hoch und qualitative und verlässliche Arbeit zu leisten, um Ihren Ansprüchen mehr als zu genügen!</div>
+                <div class="">Unser Anspruch an uns selbst ist es, hoch qualitative und verlässliche Arbeit zu leisten, um Ihren Ansprüchen mehr als zu genügen!</div>
                 <div class=" fs-3 text-center mt-5"> Unser Team</div>
                 <div class="row mb-5">
                   <div class="col w-50">
@@ -101,7 +101,7 @@
                     <div>
                       <div class="mb-3">Natalie Siebler-Herrling</div>
                       <div class="mb-2"><span class="colored">Position: </span>Creative Director / Stellvertretende Geschäftsleiterin</div>
-                      <div><span class="colored">Beschreibung: </span>Abgeschlossenes Studium als Kommunikationsgestalterin an der HFG Schwäbisch Gmünd im Jahr 2022</div>
+                      <div><span class="colored">Beschreibung: </span>Abgeschlossenes Studium als Kommunikationsgestalterin an der HfG Schwäbisch Gmünd im Jahr 2022</div>
                     </div>
                   </div>
                   <div class="col-4">
@@ -112,13 +112,19 @@
     </div>
   </main>
   <footer>
-    <div class="footer fixed-bottom w-100">
-      <div class="d-flex flex-wrap justify-content-between align-items-center ms-5 me-5 my-1">
+    <div class="footer absolute-bottom w-100">
+      <div class="d-flex flex-wrap justify-content-between align-items-center ms-5 me-5">
         <p class="col-md-4 mb-0 text-body-secondary fw-bolder">© Pixels Wrappings</p>
-        <a class="nav col-md-4 justify-content-end fw-bolder" href="#" >Impressum / Datenschutz</a>
+        <span id="logos">
+          <a href="https://www.google.com/search?sca_esv=575584273&rlz=1C1ONGR_deDE1070DE1070&sxsrf=AM9HkKmYL_aHmjkVjUzcFivuYF35G8p9jg%3A1697971279054&q=Pixels%20Wrappings&stick=H4sIAAAAAAAAAONgU1I1qDAxtzQwMzcysExLNk4yMze1MqgwNDIxSTZITTFLTTZLNDUyXMQqEJBZkZpTrBBelFhQkJmXXgwAKd6FTjwAAAA&mat=CVl3DpR6SmHU&ved=2ahUKEwj4yLT3u4mCAxXGQvEDHWhVAY0QrMcEegQIDhAH"><img src="..\..\assets\images\google.svg"></a>
+          <a href="https://www.instagram.com/pixels_wrappings/"><img src="..\..\assets\images\instagram.svg"></a>
+          <a href="https://www.facebook.com/people/Pixels-Wrappings/100095186474702/"><img src="..\..\assets\images\facebook.svg"></a>
+          <a href="https://www.youtube.com/@PixelsWrappings"><img src="..\..\assets\images\youtube.svg"></a>
+          <a href="https://www.tiktok.com/@pixels_wraps"><img src="..\..\assets\images\tiktok.svg"></a>
+        </span>
+        <div class="nav col-md-4 justify-content-end fw-bolder" ><a href="#">Impressum / Datenschutz</a></div>
       </div>
     </div>
-    <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

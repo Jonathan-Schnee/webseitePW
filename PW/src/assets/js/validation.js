@@ -1,10 +1,12 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 function check() {
     'use strict'
-  
+    
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
+    document.getElementById("subject").required = (document.getElementById("requestType").value == "other")
 
+    
 
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
@@ -17,5 +19,5 @@ function check() {
           
           form.classList.add('was-validated')
         }, false)
-        console.log(form.name + " " + form.checkValidity())})
+        })
   }

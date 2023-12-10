@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" id="nav">
           <a class="navbar-brand" href="#">
-            <img src="..\assets\images\Logo_BG_transparent.png" id="navbarImage" >
+            <img src="..\assets\images\Logo.svg" id="navbarImage" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
                     </span>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="">Anfragen</a>
               </li>
               <li class="nav-item">
@@ -58,7 +58,7 @@
                 <div class="dropdown-menu">
                   <span class="dropdownspan-2" id="dropdown-menu-2">
                     <a class="dropdown-item" href="info/tippsBeklebungen.html">Tipps für Beklebungen</a>
-                    <a class="dropdown-item" href="info/ueberUns.html">Über Uns</a>
+                    <a class="dropdown-item" href="info/ueberUns.html">Über uns</a>
                     <a class="dropdown-item" href="info/anfahrt.html">Anfahrt</a>
                   </span>
                 </div>
@@ -72,12 +72,12 @@
     <div class="container w-100">
         <div class="position-relative w-100 h-100">
             <div>
-                <p class="h3 fw-bolder text-center">Willkommen im Anfragenbereich von Pixels Wrappings</p>
+                <p class="h3 fw-bolder text-center mb-4">Willkommen im Anfragenbereich von Pixels Wrappings</p>
                 <form class="position-relative top-0 start-50 translate-middle-x needs-validation fw-bolder" id="inquiryForm" novalidate action="https://formsubmit.co/jonathan.schnee@web.de" method="POST" enctype="multipart/form-data">
                     <div class="form-group row">
                       <label for="reguestType" class="col-4 col-form-label">Art der Anfrage*</label> 
                       <div class="col-8">
-                        <select id="reguestType" name="reguestType" class="form-select" required>
+                        <select id="requestType" name="requestType" class="form-select" required>
                           <option selected disabled value="">-auswählen-</option>
                           <option value="foilCuts">Folienschnitte</option>
                           <option value="textileFinishing">Textilveredelung</option>
@@ -89,9 +89,9 @@
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="subject" class="col-4 col-form-label">Was kann man für Sie tun?*</label> 
+                      <label for="subject" class="col-4 col-form-label">Was kann man für Sie tun?</label> 
                       <div class="col-8">
-                        <input id="subject" name="subject" placeholder="Was kann man für Sie tun?" type="text" class="form-control">
+                        <textarea id="subject" name="subject" cols="40" rows="3" class="form-control"></textarea>
                       </div>
                     </div>
                     <div class="form-group row">
@@ -103,7 +103,7 @@
                     <div class="form-group row">
                       <label for="customerNumber" class="col-4 col-form-label">Kundennummer</label> 
                       <div class="col-8">
-                        <input id="customerNumber" name="customerNumber" placeholder="z.B. 10009" type="text" class="form-control">
+                        <input id="customerNumber" name="customerNumber" placeholder="z.B. 10009" type="number" class="form-control no-spinners">
                       </div>
                     </div>
                     <div class="form-group row">
@@ -121,7 +121,7 @@
                     <div class="form-group row">
                       <label for="zipCode" class="col-4 col-form-label">PLZ*</label> 
                       <div class="col-8">
-                        <input id="zipCode" name="zipCode" placeholder="01234" type="text" class="form-control" required>
+                        <input id="zipCode" name="zipCode" placeholder="01234" type="number" class="form-control no-spinners" required>
                       </div>
                     </div>
                     <div class="form-group row">
@@ -139,7 +139,7 @@
                     <div class="form-group row">
                       <label for="telephone" class="col-4 col-form-label">Telefon</label> 
                       <div class="col-8">
-                        <input id="telephone" name="telephone" placeholder="0123/4567890" type="text" class="form-control" required>
+                        <input id="telephone" name="telephone" placeholder="0123/4567890" type="number" class="form-control no-spinners" required>
                       </div>
                     </div>
                     <div class="form-group row">
@@ -171,7 +171,7 @@
     </div>
     <!-- Script damit man nur telefon oder email angeben muss -->
     <script>
-          const inputs = Array.from(
+    const inputs = Array.from(
       document.querySelectorAll('input[name=telephone], input[name=email]')
     );
     
@@ -182,6 +182,9 @@
     };
   
     inputs.forEach(i => i.addEventListener('input', inputListener));
+
+    
+
     </script>
 
   </main>
@@ -196,7 +199,7 @@
           <a href="https://www.youtube.com/@PixelsWrappings"><img src="..\assets\images\youtube.svg"></a>
           <a href="https://www.tiktok.com/@pixels_wraps"><img src="..\assets\images\tiktok.svg"></a>
         </span>
-        <a class="nav col-md-4 justify-content-end fw-bolder" href="#" >Impressum / Datenschutz</a>
+        <div class="nav col-md-4 justify-content-end fw-bolder" ><a href="#">Impressum / Datenschutz</a></div>
       </div>
     </div>
   </footer>

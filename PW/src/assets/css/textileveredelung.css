@@ -6,12 +6,12 @@ main{
   
   -webkit-backface-visibility: hidden;
   background-color: white;
-  display: flex;
-  place-content: center;
-}
-.Image{
   width: 40%;
   height: auto;
+}
+.Image{
+  display: flex;
+  place-content: center;
 }
 #TshirtView{
    display: flex;

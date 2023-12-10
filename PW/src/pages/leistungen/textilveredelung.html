@@ -30,13 +30,13 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../index.html">Start</a>
               </li>
-              <li class="nav-item dropdown" onmouseover="openDropdown('dropdown-menu-1')" onmouseout="closeDropdown('dropdown-menu-1')">
+              <li class="nav-item dropdown active" onmouseover="openDropdown('dropdown-menu-1')" onmouseout="closeDropdown('dropdown-menu-1')">
                 <a class="nav-link dropdown-toggle" id="nav-link-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Leistungen
                 </a>
                 <div class="dropdown-menu">
                     <span class="dropdownspan-1" id="dropdown-menu-1">
-                      <a class="dropdown-item" href="">Textilien</a>
+                      <a class="dropdown-item ddActive" href="">Textilien</a>
                       <a class="dropdown-item" href="fensterbeschriftung.html">Fensterbeschriftung</a>
                       <a class="dropdown-item" href="geschenkideen.html">Geschenkideen</a>
                       <a class="dropdown-item" href="folierung.html">Folierung</a>
@@ -57,7 +57,7 @@
                 <div class="dropdown-menu">
                   <span class="dropdownspan-2" id="dropdown-menu-2">
                     <a class="dropdown-item" href="../info/tippsBeklebungen.html">Tipps für Beklebungen</a>
-                    <a class="dropdown-item" href="../info/ueberUns.html">Über Uns</a>
+                    <a class="dropdown-item" href="../info/ueberUns.html">Über uns</a>
                     <a class="dropdown-item" href="../info/anfahrt.html">Anfahrt</a>
                   </span>
                 </div>
@@ -72,10 +72,10 @@
       Textilveredelung
     </div>
     <div id="TshirtView">
-        <div class="TshirtImage">
-          <img src="..\..\assets\images\T-Shirt.png" class="Image">
+        <div class="Image">
+          <img src="..\..\assets\images\T-Shirt.png" class="TshirtImage">
         </div>
-        <div class="w-100 text-center fw-bolder fs-5 mb-4">Mit unserer Texlheißpresse erfüllen wir jeden Wunsch auf Ihren Texlien, egal ob T-Shirt, Polos, Hosen oder Jacken.</div>
+        <div class="w-100 text-center fw-bolder fs-5 mb-4">Mit unserer Textilheißpresse erfüllen wir jeden Wunsch auf Ihren Texlien, egal ob T-Shirt, Polos, Hosen oder Jacken.</div>
         <div>
           <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #FFFFFF;" onclick="changeTo('#FFFFFF')"></button>
           <button type="button" class="btn btn-primary btn-square-md" style="--bs-btn-bg: #1E4F9E;" onclick="changeTo('#1E4F9E')"></button>
@@ -98,7 +98,7 @@
           <a href="https://www.youtube.com/@PixelsWrappings"><img src="..\..\assets\images\youtube.svg"></a>
           <a href="https://www.tiktok.com/@pixels_wraps"><img src="..\..\assets\images\tiktok.svg"></a>
         </span>
-        <a class="nav col-md-4 justify-content-end fw-bolder" href="#" >Impressum / Datenschutz</a>
+        <div class="nav col-md-4 justify-content-end fw-bolder" ><a href="#">Impressum / Datenschutz</a></div>
       </div>
     </div>
   </footer>
